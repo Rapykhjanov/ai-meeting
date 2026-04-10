@@ -47,5 +47,5 @@ async def reminder_loop(bot):
             await send_reminders(bot)
         except Exception as e:
             print(repr(e))
-        # Ждём 6 часов
+
         await asyncio.sleep(6 * 60 * 60)
